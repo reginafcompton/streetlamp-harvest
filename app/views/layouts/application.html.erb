@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>StreetlampHarvest</title>
+  <link href='https://fonts.googleapis.com/css?family=Poiret+One|Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 
-<% if user_signed_in? %>
-  <%= link_to "Sign_out", destroy_user_session_path, :method => 'delete' %>
-<% end %>
+  <% if user_signed_in? %>
+    <%= link_to "Sign_out", destroy_user_session_path, :method => 'delete' %>
+  <% end %>
+
+  <div class="bgc-night">
+    <header class="container t-ivory f-fun debug">
+      <ul class="fl-r fz-lg">
+
+        <li class="fl-l lis-n p-xxs"><%= link_to 'home', root_path %></li>
+        <li class="fl-l lis-n p-xxs"><%= link_to 'posts', posts_path %></li>
+
+        <% if user_signed_in? %>
+          <li class="fl-l lis-n p-xxs"><%= link_to "logout", destroy_user_session_path, :method => 'delete' %></li>
+        <% else %>
+          <li class="fl-l lis-n p-xxs"><%= link_to "login", new_user_session_path %></li>
+        <% end %>
+
+      </ul>
+    </header>
+  </div>
+
 
 <%= yield %>
+
 
 </body>
 </html>

@@ -1,0 +1,71 @@
+.img { background-image: url("../imgs/header_img.JPG"); }
+
+header a {
+  color: #FDFCFC;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #c4c2c0;
+}
+
+main a {
+  color: #B50093;
+  text-decoration: none;
+}
+
+main a:hover {
+  color: #9eab52;
+  text-decoration: none;
+}
+
+/*Atomic: every CSS class should have one rule; every CSS class should be an abbreviation (from Emmet).*/
+
+/*Text Style*/
+.f-fun { font-family: 'Amatic SC', cursive;}
+.f-std { font-family: 'Poiret One', cursive; }
+
+.fz-sm { font-size: 1.2em; }
+.fz-std { font-size: 1.5em; }
+.fz-lg { font-size: 2em; }
+.fz-xxl { font-size: 6.5em; }
+
+.t-ivory { color: #FDFCFC; }
+
+.shadow { text-shadow: 2px 2px #674d62; }
+
+.lis-n { list-style: none;}
+
+.bgc-night { background-color: #674d62; }
+.bgc-day { background-color: #D6BED1;}
+
+/*Padding*/
+.p-xxs { padding: 0.5em; }
+.p-xs { padding: 1em}
+.p-sm { padding: 1.5em; }
+.p-xl { padding: 4.8em; }
+.p-sm-b { padding-bottom: 1.5em; }
+.p-sm-t { padding-top: 0.4em; }
+
+/*Position attributes*/
+.fl-l { float: left;}
+.fl-r { float: right;}
+
+.ta-c {text-align: center;}
+
+.m-auto { margin: auto 0;}
+
+.d-il { display: inline;}
+
+
+ul, ol, h1, h3 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+.debug {
+  border: 0px solid violet;
+}

@@ -1,1 +1,10 @@
 One post.
+
+<%# @comments.each do |comment| %>
+  <%# comment.content %>
+  <%# commnet.user_id.name %>
+<%# end %>
+
+<p><%= link_to 'Register', new_user_registration_path %> or <%= link_to 'login', new_user_session_path %> to leave a comment.</p>
+
+
