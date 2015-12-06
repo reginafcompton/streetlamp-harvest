@@ -11,9 +11,6 @@
 </head>
 <body>
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-
   <% if user_signed_in? %>
     <%= link_to "Sign_out", destroy_user_session_path, :method => 'delete' %>
   <% end %>
@@ -36,10 +33,31 @@
   </div>
 
   <div class="img debug">
-    <h1 class="p-sm-b t-ivory fz-xxl f-std ta-c shadow"> </h1>
+    <!-- <h1 class="p-sm-b t-ivory fz-xxl f-std ta-c shadow"> </h1> -->
   </div>
 
-<%= yield %>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+<main class="container row gutters-t gutters-d debug">
+  <div class="col span-9-t p-xxs f-std fz-std debug">
+
+  <%= yield %>
+
+  </div>
+
+  <div class="col span-3-t p-xxs f-std debug">
+    <h3 class="fz-lg p-sm-t">Recent Highlights</h3>
+      <ul>
+        <li class="lis-n p-xxs fz-sm">University of Chicago</li>
+      </ul>
+    <h3 class="fz-lg p-sm-t">Archives</h3>
+      <ul>
+        <li class="lis-n p-xxs fz-sm">October 2015</li>
+        <li class="lis-n p-xxs fz-sm">November 2015</li>
+      </ul>
+    </div>
+</main>
 
 <footer class="p-xxs ta-c bgc-day f-fun fz-lg debug">
   <p>Copyright &copy; Regina Frances Compton 2015</p>
