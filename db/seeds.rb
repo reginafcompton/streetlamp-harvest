@@ -7,7 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-posts = Post.create([{ title: 'University of Chicago, South Quad', content: '<p>This handsome little fellow lives in the South Quad at the University of Chicago. Alone among simple mums, it does not scream of wastefulness, but rather sits demurely and dignified, putting on airs as listless university humanists walk by.</p><p>As far as edibility goes, I give this cabbage a 2.5 out of 5 leaves. It has a leathery texture, and though reminiscent of kale, it is wanting in flavor. I do not recommend this particular vegetable for eating, even to the hungriest UofC graduate student.</p>'}])
+posts = Post.create([{ title: 'University of Chicago, South Quad', content: 'This handsome little fellow lives in the South Quad at the University of Chicago. Alone among simple mums, it does not scream of wastefulness, but rather sits demurely and dignified, putting on airs as listless university humanists walk by. As far as edibility goes, I give this cabbage a 2.5 out of 5 leaves. It has a leathery texture, and though reminiscent of kale, it is wanting in flavor. I do not recommend this particular vegetable for eating, even to the hungriest UofC graduate student.'}, { title: "Fancy carrots", content: "Fancy carrots, here in Chicago."}])
 
 
-comments = Comments.create([{content: "Very interesting", user_id: 1, post_id: 1}])
+comments = Comment.create([{content: "Very interesting", user_id: 1, post_id: 1}, {content: "Terrific.", user_id: 1, post_id: 2}])
+
+
+
