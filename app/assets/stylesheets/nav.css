@@ -4,26 +4,26 @@
 }
 
 #nav-trigger span {
-  /*Put atomic stuff here.*/
+  font-size: 2.2em;
 }
 
 #nav-trigger span:after {
+  font-size: 2.2em;
   width: 30%;
   display: inline-block;
-  color: red;
   content: "";
 }
 
-/*#nav-trigger span:hover {
-
-}*/
-
-#nav-trigger span.open:after {
-
+#nav-trigger span:hover {
+  color: #9eab52;
 }
 
-nav#nav-main {
-  /*All the stuff. Not atomic.*/
+#nav-trigger span.open:after {
+}
+
+#nav-main ul{
+  float: right;
+  font-size: 2.2em;
 }
 
 nav#nav-mobile {
@@ -31,14 +31,10 @@ nav#nav-mobile {
 }
 
 nav#nav-mobile ul {
-  display: none;
-  color:red;
-  max-width: 2em;
-  min-width: 1em;
+  display: block;
 }
 
 nav#nav-mobile li {
-  display: block;
 }
 
 @media all and (max-width: 50em) {

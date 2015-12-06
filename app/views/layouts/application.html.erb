@@ -13,11 +13,11 @@
 
   <div class="bgc-night">
     <header class="container t-ivory f-fun debug">
-      <div id="nav-trigger" class="fl-l p-xxs">
+      <div id="nav-trigger" >
         <span>Menu</span>
       </div>
       <nav id="nav-main">
-      <ul class="fl-r fz-lg">
+      <ul>
 
         <li class="fl-l lis-n p-xxs"><%= link_to 'home', root_path %></li>
         <li class="fl-l lis-n p-xxs"><%= link_to 'posts', posts_path %></li>
@@ -30,6 +30,18 @@
 
       </ul>
       </nav>
+      <nav id="nav-mobile">
+      <ul>
+        <li class="fl-l lis-n p-xxs"><%= link_to 'home', root_path %></li>
+        <li class="fl-l lis-n p-xxs"><%= link_to 'posts', posts_path %></li>
+
+        <% if user_signed_in? %>
+          <li class="fl-l lis-n p-xxs"><%= link_to "logout", destroy_user_session_path, :method => 'delete' %></li>
+        <% else %>
+          <li class="fl-l lis-n p-xxs"><%= link_to "login", new_user_session_path %></li>
+        <% end %>
+      </ul>
+      </nav>
     </header>
   </div>
 
@@ -37,7 +49,7 @@
     <!-- <h1 class="p-sm-b t-ivory fz-xxl f-std ta-c shadow"> </h1> -->
   </div>
 
-<main class="container row gutters-t gutters-d debug">
+<main class="container row gutters-t gutters-d p-lg-b debug">
   <div class="col span-12-t p-xxs f-std fz-std ta-j debug">
 
   <p class="notice"><%= notice %></p>
