@@ -1,6 +1,7 @@
 class DeviseCreateUsers < ActiveRecord::Migration
   def change
     create_table(:users) do |t|
+      t.boolean :admin
       t.string :username
       ## Database authenticatable
       t.string :email,              null: false, default: ""
@@ -22,10 +23,10 @@ class DeviseCreateUsers < ActiveRecord::Migration
 
       ## Confirmable
       # Sends user a confirmation email to verify that they signed-up.
-      t.string   :confirmation_token
-      t.datetime :confirmed_at
-      t.datetime :confirmation_sent_at
-      t.string   :unconfirmed_email # Only if using reconfirmable
+      # t.string   :confirmation_token
+      # t.datetime :confirmed_at
+      # t.datetime :confirmation_sent_at
+      # t.string   :unconfirmed_email # Only if using reconfirmable
 
       ## Lockable
       # Sets the number of log-in attempts.

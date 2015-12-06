@@ -29,7 +29,7 @@ main a:hover {
 .f-fun { font-family: 'Londrina Sketch', cursive; }
 .f-std { font-family: 'Quicksand', sans-serif; }
 
-.fz-xsm { font-size: 0.8; }
+.fz-xsm { font-size: 0.8em; }
 .fz-sm { font-size: 1.2em; }
 .fz-std { font-size: 1.5em; }
 .fz-lg { font-size: 2.2em; }
@@ -45,6 +45,11 @@ main a:hover {
 .bgc-day { background-color: #D6BED1; }
 .bgc-light { background-color: #EDECEC; }
 
+.bdrs { border-radius: 1em; }
+
+.bdb { border-bottom: 1px gray solid; }
+
+
 /*Padding*/
 .p-xxs { padding: 0.5em; }
 .p-xs { padding: 1em}
@@ -57,7 +62,8 @@ main a:hover {
 .fl-l { float: left;}
 .fl-r { float: right;}
 
-.ta-c {text-align: center;}
+.ta-c { text-align: center; }
+.ta-j { text-align: justify; }
 
 .m-auto { margin: auto 0;}
 

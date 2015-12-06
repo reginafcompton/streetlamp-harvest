@@ -11,12 +11,12 @@
 </head>
 <body>
 
-  <% if user_signed_in? %>
-    <%= link_to "Sign_out", destroy_user_session_path, :method => 'delete' %>
-  <% end %>
-
   <div class="bgc-night">
     <header class="container t-ivory f-fun debug">
+      <div id="nav-trigger" class="fl-l p-xxs">
+        <span>Menu</span>
+      </div>
+      <nav id="nav-main">
       <ul class="fl-r fz-lg">
 
         <li class="fl-l lis-n p-xxs"><%= link_to 'home', root_path %></li>
@@ -29,6 +29,7 @@
         <% end %>
 
       </ul>
+      </nav>
     </header>
   </div>
 
@@ -36,27 +37,27 @@
     <!-- <h1 class="p-sm-b t-ivory fz-xxl f-std ta-c shadow"> </h1> -->
   </div>
 
+<main class="container row gutters-t gutters-d debug">
+  <div class="col span-12-t p-xxs f-std fz-std ta-j debug">
+
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
-
-<main class="container row gutters-t gutters-d debug">
-  <div class="col span-9-t p-xxs f-std fz-std debug">
 
   <%= yield %>
 
   </div>
 
-  <div class="col span-3-t p-xxs f-std debug">
+<!--   <div class="col span-3-t p-xxs f-std debug">
     <h3 class="fz-lg p-sm-t">Recent Highlights</h3>
       <ul>
-        <li class="lis-n p-xxs fz-sm">University of Chicago</li>
+        <li class="lis-n p-xxs fz-sm"><%# link_to 'University of Chicago', post_path(@trend_post) %></li>
       </ul>
     <h3 class="fz-lg p-sm-t">Archives</h3>
       <ul>
         <li class="lis-n p-xxs fz-sm">October 2015</li>
         <li class="lis-n p-xxs fz-sm">November 2015</li>
       </ul>
-    </div>
+    </div> -->
 </main>
 
 <footer class="p-xxs ta-c bgc-day f-fun fz-lg debug">

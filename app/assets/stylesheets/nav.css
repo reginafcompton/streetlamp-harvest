@@ -1,0 +1,50 @@
+#nav-trigger {
+  display: none;
+  text-align: center;
+}
+
+#nav-trigger span {
+  /*Put atomic stuff here.*/
+}
+
+#nav-trigger span:after {
+  width: 30%;
+  display: inline-block;
+  color: red;
+  content: "";
+}
+
+/*#nav-trigger span:hover {
+
+}*/
+
+#nav-trigger span.open:after {
+
+}
+
+nav#nav-main {
+  /*All the stuff. Not atomic.*/
+}
+
+nav#nav-mobile {
+  display: none;
+}
+
+nav#nav-mobile ul {
+  display: none;
+  color:red;
+  max-width: 2em;
+  min-width: 1em;
+}
+
+nav#nav-mobile li {
+  display: block;
+}
+
+@media all and (max-width: 50em) {
+  #nav-trigger { display: block; }
+  nav#nav-main { display: none; }
+  nav#nav-mobile { display: block; }
+}
+
+
