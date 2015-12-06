@@ -23,6 +23,7 @@ main a:hover {
 }
 
 
+
 /*Atomic: every CSS class should have one rule; every CSS class should be an abbreviation (from Emmet).*/
 
 /*Text Style*/
@@ -85,3 +86,5 @@ ul, ol, h1, h3 {
 .comment-form {
   display: none;
 }
+
+
