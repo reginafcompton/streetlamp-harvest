@@ -1,4 +1,7 @@
-.img { background-image: url(header_img.JPG); }
+.img {
+  background-image: url(header_img.JPG);
+  height: 12em;
+}
 
 header a {
   color: #FDFCFC;
@@ -19,15 +22,17 @@ main a:hover {
   text-decoration: none;
 }
 
+
 /*Atomic: every CSS class should have one rule; every CSS class should be an abbreviation (from Emmet).*/
 
 /*Text Style*/
 .f-fun { font-family: 'Londrina Sketch', cursive; }
 .f-std { font-family: 'Quicksand', sans-serif; }
 
+.fz-xsm { font-size: 0.8; }
 .fz-sm { font-size: 1.2em; }
 .fz-std { font-size: 1.5em; }
-.fz-lg { font-size: 2em; }
+.fz-lg { font-size: 2.2em; }
 .fz-xxl { font-size: 6.5em; }
 
 .t-ivory { color: #FDFCFC; }
@@ -37,7 +42,8 @@ main a:hover {
 .lis-n { list-style: none;}
 
 .bgc-night { background-color: #674d62; }
-.bgc-day { background-color: #D6BED1;}
+.bgc-day { background-color: #D6BED1; }
+.bgc-light { background-color: #EDECEC; }
 
 /*Padding*/
 .p-xxs { padding: 0.5em; }

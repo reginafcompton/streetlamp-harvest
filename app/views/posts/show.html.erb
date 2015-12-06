@@ -1,12 +1,15 @@
-<p>One post.</p>
-<%= @post.title %>
-<%= @post.content %>
+<h1 class="f-fun fz-std"><%= @post.title %></h1>
+<h3 class="f-fun"><%= @post.created_at.strftime("%d %b. %Y") %></h3>
+<p><%= @post.content %></p>
 
 <div class="comment-section">
-  <p>Comments</p>
+  <p class="f-fun">Reactions. Thoughts. Commments. Criticism.</p>
   <% @post.comments.each do |comment| %>
-    <%= comment.content %>
-    <%# comment.user.email %>
+    <div class="bgc-light fz-xsm">
+      <p><%= comment.content %><p>
+      <p><%= comment.created_at.to_date %><p>
+      <p><%= comment.user %><p>
+    </div>
   <% end %>
 </div>
 
@@ -19,7 +22,7 @@
 <% end %>
 
 
-<%= link_to 'share some thoughts', new_post_comment_path(@post), :class => 'create-post-link' %>
+<p>Ideas? <%= link_to 'Share some words.', new_post_comment_path(@post), :class => 'create-post-link' %></p>
 
 <div class="comment-form">
   <%= form_for :comment, url: post_comments_path(@post) do |f| %>
@@ -32,6 +35,5 @@
       <%= f.submit "Post!" %>
     </div>
   <% end %>
-
 </div>
 
