@@ -23,6 +23,26 @@ main a:hover {
 }
 
 
+/*Sticky Footer*/
+
+html {
+  /* Pushes footer to bottom */
+  position: relative;
+  min-height: 100%;
+}
+
+.text {
+   /*Footer height */
+  margin-bottom: 120px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+
 
 /*Atomic: every CSS class should have one rule; every CSS class should be an abbreviation (from Emmet).*/
 
