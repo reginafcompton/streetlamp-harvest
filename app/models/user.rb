@@ -1,9 +1,3 @@
 class User < ActiveRecord::Base
   has_many :comments
-  # Include default devise modules. Others available are:
-  # :lockable, :timeoutable and :omniauthable
-  # devise :database_authenticatable, :registerable,
-  #        :recoverable, :rememberable, :trackable, :validatable
-
-         # :confirmable - add this for email confirmation.
 end
