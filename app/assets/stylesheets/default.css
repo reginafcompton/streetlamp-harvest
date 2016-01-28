@@ -1,6 +1,10 @@
 .img {
-  background-image: url(header_img.JPG);
-  height: 12em;
+  background-image: url("header_img.jpeg");
+  height: 22em;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 header a {
