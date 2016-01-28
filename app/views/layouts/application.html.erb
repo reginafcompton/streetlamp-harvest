@@ -12,12 +12,9 @@
 <body>
 
   <div class="bgc-night">
-    <header class="container t-ivory f-fun debug">
-      <div id="nav-trigger" >
-        <span>Menu</span>
-      </div>
-      <nav id="nav-main">
-      <ul>
+    <header class="container t-ivory f-fun">
+      <nav>
+      <ul class="fl-r fz-lg">
 
         <li class="fl-l lis-n p-xxs"><%= link_to 'home', root_path %></li>
         <li class="fl-l lis-n p-xxs"><%= link_to 'posts', posts_path %></li>
@@ -30,27 +27,15 @@
 
       </ul>
       </nav>
-      <nav id="nav-mobile">
-      <ul>
-        <li class="fl-l lis-n p-xxs"><%= link_to 'home', root_path %></li>
-        <li class="fl-l lis-n p-xxs"><%= link_to 'posts', posts_path %></li>
 
-        <% if user_signed_in? %>
-          <li class="fl-l lis-n p-xxs"><%= link_to "logout", destroy_user_session_path, :method => 'delete' %></li>
-        <% else %>
-          <li class="fl-l lis-n p-xxs"><%= link_to "login", new_user_session_path %></li>
-        <% end %>
-      </ul>
-      </nav>
     </header>
   </div>
 
-  <div class="img debug">
-    <!-- <h1 class="p-sm-b t-ivory fz-xxl f-std ta-c shadow"> </h1> -->
+  <div class="img">
   </div>
 
-<main class="container row gutters-t gutters-d p-lg-b debug">
-  <div class="col span-12-t p-xxs f-std fz-std ta-j debug">
+<main class="container row gutters-t gutters-d p-lg-b">
+  <div class="col span-12-t p-xxs f-std fz-std ta-j text">
 
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
@@ -59,7 +44,7 @@
 
   </div>
 
-<!--   <div class="col span-3-t p-xxs f-std debug">
+<!--   <div class="col span-3-t p-xxs f-std">
     <h3 class="fz-lg p-sm-t">Recent Highlights</h3>
       <ul>
         <li class="lis-n p-xxs fz-sm"><%# link_to 'University of Chicago', post_path(@trend_post) %></li>
@@ -72,7 +57,7 @@
     </div> -->
 </main>
 
-<footer class="p-xxs ta-c bgc-day f-fun fz-lg debug">
+<footer class="p-xxs ta-c bgc-day f-fun fz-lg">
   <p>Copyright &copy; Regina Frances Compton 2015</p>
 </footer>
 
