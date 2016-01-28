@@ -13,11 +13,8 @@
 
   <div class="bgc-night">
     <header class="container t-ivory f-fun">
-      <div id="nav-trigger" >
-        <span>Menu</span>
-      </div>
-      <nav id="nav-main">
-      <ul>
+      <nav>
+      <ul class="fl-r fz-lg">
 
         <li class="fl-l lis-n p-xxs"><%= link_to 'home', root_path %></li>
         <li class="fl-l lis-n p-xxs"><%= link_to 'posts', posts_path %></li>
@@ -30,18 +27,7 @@
 
       </ul>
       </nav>
-      <nav id="nav-mobile">
-      <ul>
-        <li class="fl-l lis-n p-xxs"><%= link_to 'home', root_path %></li>
-        <li class="fl-l lis-n p-xxs"><%= link_to 'posts', posts_path %></li>
 
-        <% if user_signed_in? %>
-          <li class="fl-l lis-n p-xxs"><%= link_to "logout", destroy_user_session_path, :method => 'delete' %></li>
-        <% else %>
-          <li class="fl-l lis-n p-xxs"><%= link_to "login", new_user_session_path %></li>
-        <% end %>
-      </ul>
-      </nav>
     </header>
   </div>
 
