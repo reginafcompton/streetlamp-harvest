@@ -1,42 +1,47 @@
 <h1 class="f-fun fz-std"><%= @post.title %></h1>
 <h3 class="f-fun"><%= @post.created_at.strftime("%d %b. %Y") %></h3>
-<p><%= @post.content %></p>
+<p><%= @post.paragraph_one %></p>
+<p><%= @post.paragraph_two %></p>
+<p><%= image_tag @post.image.url(:medium) %>
 
-<div class="comment-section">
+<!-- <div class="comment-section">
   <p class="f-fun bdb">Reactions. Thoughts. Commments. Criticism.</p>
-  <% @post.comments.each do |comment| %>
+  <%# @post.comments.each do |comment| %>
     <div class="bgc-light fz-xsm">
-      <p><%= comment.content %><p>
+      <p><%# comment.content %><p>
       <ul class="lis-n">
-        <li class="d-il"><em>Written <%= comment.time_since_creation %> days ago </em>|</li>
-        <li class="d-il">Post by <%= comment.user.username %></li>
+        <li class="d-il"><em>Written <%# comment.time_since_creation %> days ago </em>|</li>
+        <li class="d-il">Post by <%# comment.user.username %></li>
     </ul>
     </div>
-  <% end %>
-</div>
+  <%# end %>
+</div> -->
 
-<% if user_signed_in? %>
+<!--
+<%# if user_signed_in? %>
 
-  <p>Ideas? <%= link_to 'Share some words.', new_post_comment_path(@post), :class => 'create-post-link' %></p>
+  <p>Ideas? <%# link_to 'Share some words.', new_post_comment_path(@post), :class => 'create-post-link' %></p>
 
   <div class="comment-form">
-  <%= form_for :comment, url: post_comments_path(@post) do |f| %>
+  <%# form_for :comment, url: post_comments_path(@post) do |f| %>
     <div class="field">
-      <%= f.label :content %><br />
-      <%= f.text_area :content %>
+      <%# f.label :content %><br />
+      <%# f.text_area :content %>
     </div>
 
     <div class="actions">
-      <%= f.submit "Post!" %>
+      <%# f.submit "Post!" %>
     </div>
-  <% end %>
+  <%# end %>
   </div>
 
-<% else %>
+<%# else %>
 
-  <p><%= link_to 'Register', new_user_registration_path %> or <%= link_to 'login', new_user_session_path %> to leave a comment.</p>
+  <p><%# link_to 'Register', new_user_registration_path %> or <%# link_to 'login', new_user_session_path %> to leave a comment.</p>
 
-<% end %>
+<%# end %>
+
+-->
 
 
 
