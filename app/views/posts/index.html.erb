@@ -1,6 +1,10 @@
 <% @posts.each do |post| %>
   <h1 class="f-fun fz-std"><%= post.title %></h1>
   <h3 class="f-fun"><%= post.created_at.strftime("%d %b. %Y") %></h3>
-  <p><%= post.content %></p>
+  <p><%= post.paragraph_one %></p>
   <p><%= link_to 'read more', post_path(post) %></p>
 <% end %>
+
+<%= render 'form' %>
+
+

@@ -13,4 +13,21 @@ class PostsController < ApplicationController
     # @trend_post = @posts_all.first
   end
 
+  def new
+  end
+
+  def create
+    @post = Post.new(post_params)
+    @post.save
+
+    redirect_to @post
+  end
+
+  private
+
+    #Define explicity which params to allow.
+    def post_params
+      params.require(:post).permit(:title, :paragraph_one, :paragraph_two, :image)
+    end
+
 end
