@@ -1,15 +1,12 @@
-// $(document).ready(function(){
-//   $(".create-post-link").on("click", function(event) {
-//     event.preventDefault();
-//     $(".comment-form").toggle();
-//   });
+$(document).ready(function(){
+  $(".create-post-link").on("click", function(event) {
+    event.preventDefault();
+    $(".comment-form").toggle();
+  });
 
-//   openPopUp();
-//   closePopUp();
-// });
-
-openPopUp();
-closePopUp();
+  openPopUp();
+  closePopUp();
+});
 
 function openPopUp() {
   $("#new-post").on("click", function() {
