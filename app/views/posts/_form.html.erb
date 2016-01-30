@@ -1,25 +1,25 @@
-<%= form_for :post, url: posts_path, html: { multipart: true } do |f| %>
+<div class="popup-new">
+  <a class="close fl-r">close</a>
+  <%= form_for :post, url: posts_path, html: { multipart: true } do |f| %>
+    <div class="field">
+      <%= f.text_field :title, :placeholder => "Title", class: "mb-sm mt-m" %>
+    </div>
 
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </div>
+    <div class="field">
+      <%= f.text_area :paragraph_one, :placeholder => "Write post...", :rows => "8", class: "span-12-t" %>
+    </div>
 
-  <div class="field">
-    <%= f.label :paragraph %>
-    <%= f.text_field :paragraph_one %>
-  </div>
+    <div class="field">
+      <%= f.text_area :paragraph_two, :placeholder => "Add more here...", :rows => "8", class: "span-12-t" %>
+    </div>
 
-  <div class="field">
-    <%= f.text_field :paragraph_two %>
-  </div>
-
-  <div class="filed">
-    <%= f.label :image %>
-    <%= f.file_field :image %>
-  </div>
-
-  <div>
-    <%= f.submit %>
-  </div>
-<% end %>
+    <div class="filed">
+      <%= f.file_field :image %>
+    </div>
+    <p></p>
+    <div>
+      <%= f.submit %>
+    </div>
+    <p></p>
+  <% end %>
+</div>

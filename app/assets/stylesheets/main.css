@@ -37,7 +37,7 @@ html {
 
 .text {
    /*Footer height */
-  margin-bottom: 120px;
+  margin-bottom: 150px;
 }
 
 footer {
@@ -47,6 +47,41 @@ footer {
   height: 100px;
 }
 
+/*Popup Window*/
+.popup-new {
+  display: none;
+  background: #FEFFFF;
+  padding: 1.5em;
+  text-align: justify;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  margin: auto 0;
+  z-index: 88888;
+  box-shadow: 0px 0px 50px #000000;
+  -moz-box-shadow: 0px 0px 50px #000000;
+  -webkit-box-shadow: 0px 0px 150px #000000;
+  border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+}
+
+#mask {
+  display: none;
+  background-color: #472D32;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 77777;
+  width: 100%;
+  opacity: 0.7;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 /*Atomic: every CSS class should have one rule; every CSS class should be an abbreviation (from Emmet).*/
 
@@ -75,13 +110,17 @@ footer {
 .bdb { border-bottom: 1px gray solid; }
 
 
-/*Padding*/
+/*Padding and Margin*/
 .p-xxs { padding: 0.5em; }
 .p-xs { padding: 1em}
 .p-sm { padding: 1.5em; }
 .p-xl { padding: 4.8em; }
 .p-sm-b { padding-bottom: 1.5em; }
 .p-sm-t { padding-top: 0.4em; }
+
+.mb-sm { margin-bottom: 1em; }
+.mt-m { margin-top: 2em; }
+.m-auto { margin: auto 0;}
 
 /*Position attributes*/
 .fl-l { float: left;}
@@ -90,7 +129,7 @@ footer {
 .ta-c { text-align: center; }
 .ta-j { text-align: justify; }
 
-.m-auto { margin: auto 0;}
+
 
 .d-il { display: inline;}
 
