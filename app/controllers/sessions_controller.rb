@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
   def create
     admin = Admin.find_by_name(params[:name])
     if admin && admin.authenticate(params[:password])
-      session[:admin_id] = admin.admin_id
+      session[:admin_id] = admin.id
       redirect_to posts_path
     else
       redirect_to root_path

@@ -5,9 +5,11 @@
   <p><%= link_to 'read more', post_path(post) %></p>
 <% end %>
 
-<button id="new-post">Create New Post</button>
-<%= render 'form' %>
-<div id="mask"></div>
+<% if logged_in_admin %>
+  <button id="new-post">Create New Post</button>
+  <%= render 'form' %>
+  <div id="mask"></div>
+<% end %>
 
 <h1>Admin Login</h1>
 
@@ -18,4 +20,6 @@
   <%= submit_tag "Submit" %>
 
 <% end %>
+
+
 
