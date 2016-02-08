@@ -51,8 +51,15 @@
     </div> -->
 </main>
 
-<footer class="p-xxs ta-c bgc-day f-fun fz-lg">
-  <p>Copyright &copy; Regina Frances Compton 2015</p>
+<footer class="p-xs ta-c bgc-day f-fun fz-lg">
+  <% if logged_in_admin %>
+    <%= link_to image_tag("eggplant.png"), logout_path %>
+  <% else %>
+    <div><a id="admin-login"><%= image_tag("cabbage.png", height: '80', width: '80') %></a></div>
+    <%= render 'admin/login' %>
+    <div id="mask"></div>
+  <% end %>
+    <div class="p-m-t">Copyright &copy; Regina Frances Compton 2015</div>
 </footer>
 
 </body>
