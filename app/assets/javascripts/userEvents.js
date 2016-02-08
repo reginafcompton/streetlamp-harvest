@@ -14,11 +14,18 @@ function openPopUp() {
     popupBox.fadeIn(600);
     $("#mask").fadeIn(600);
   });
+
+  $("#admin-login").on("click", function() {
+    var popupBox = $(".popup-login");
+    popupBox.fadeIn(600);
+    $("#mask").fadeIn(600);
+  });
 }
 
 function closePopUp() {
   $("body").on("click", ".close", function() {
     $(".popup-new").fadeOut(600);
+    $(".popup-login").fadeOut(600);
     $("#mask").fadeOut(600);
   });
 }
