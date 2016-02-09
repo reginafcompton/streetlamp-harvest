@@ -16,12 +16,12 @@ header a:hover {
   color: #c4c2c0;
 }
 
-main a {
+footer a, main a {
   color: #B50093;
   text-decoration: none;
 }
 
-main a:hover {
+footer a:hover, main a:hover {
   color: #9eab52;
   text-decoration: none;
 }

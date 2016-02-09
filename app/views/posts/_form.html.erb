@@ -1,8 +1,9 @@
 <div class="popup-new">
-  <a class="close fl-r">close</a>
+  <a class="close fl-r f-fun fz-std">close</a>
+  <h1 class="f-fun">Talk About Vegetables</h1>
   <%= form_for :post, url: posts_path, html: { multipart: true } do |f| %>
     <div class="field">
-      <%= f.text_field :title, :placeholder => "Title", class: "mb-sm mt-m" %>
+      <%= f.text_field :title, :placeholder => "Title", class: "mb-sm" %>
     </div>
 
     <div class="field">
