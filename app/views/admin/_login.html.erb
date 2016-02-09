@@ -1,12 +1,12 @@
 <div class="popup-login">
   <a class="close fl-r">close</a>
 
-  <h1>Admin Login</h1>
+  <h2>Login for Admins</h2>
 
   <%= form_tag '/login' do %>
 
-    Name: <%= text_field_tag :name %>
-    Password: <%= password_field_tag :password %>
+    <p><%= text_field_tag :name, nil, placeholder: " Name . . .", class: "span-4-t" %></p>
+    <p><%= password_field_tag :password, nil, placeholder: " Secret code . . .", class: "span-4-t" %><p>
     <%= submit_tag "Submit" %>
 
   <% end %>
