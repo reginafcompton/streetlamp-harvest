@@ -14,10 +14,15 @@
   <div class="bgc-night">
     <header class="container t-ivory f-fun">
       <nav>
-      <ul class="fl-r fz-lg">
+      <ul class="fz-lg">
+        <% if user_signed_in? %>
+          <li class="fl-l lis-n p-sm-t"><%= link_to image_tag("carrot.png"), destroy_user_session_path, :method => 'delete' %></li>
+        <% else %>
+          <li class="fl-l lis-n p-sm-t"><%= link_to image_tag("tomato.png"), new_user_session_path %></li>
+        <% end %>
 
-        <li class="fl-l lis-n p-xs"><%= link_to 'home', root_path %></li>
-        <li class="fl-l lis-n p-xs"><%= link_to 'posts', posts_path %></li>
+        <li class="fl-r lis-n p-xxs"><%= link_to 'home', root_path %></li>
+        <li class="fl-r lis-n p-xxs"><%= link_to 'posts', posts_path %></li>
 
       </ul>
       </nav>
