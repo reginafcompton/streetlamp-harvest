@@ -1,16 +1,15 @@
-<h2>Resend confirmation instructions</h2>
+<h1 class="f-fun fz-lg">Resend confirmation instructions</h1>
+<p>Type your email address below. In moments, your inbox should have a message with instrcutions to confirm your email address. Please contact Regina Compton with any questions or quandries (reginafcompton@gmail.com).</p>
 
 <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %> 
+  <div class="field mb-sm">
+    <%= f.email_field :email, placeholder: "Email . . .", autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Resend confirmation instructions" %>
+  <div class="actions mb-sm f-fun fz-std">
+    <%= f.submit "Submit" %>
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>

@@ -1,16 +1,15 @@
-<h2>Forgot your password?</h2>
+<h1 class="f-fun fz-lg">Reset Password</h1>
+<p>Forgot your password? That's okay. Type your email address below. In moments, your inbox should have a message with instrcutions to reset your password. Please contact Regina Compton with any questions or quandries (reginafcompton@gmail.com).</p>
 
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+  <div class="field mb-sm">
+    <%= f.email_field :email, placeholder: "Email . . .", autofocus: true %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
+  <div class="actions mb-sm f-fun fz-std">
+    <%= f.submit "Submit" %>
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
