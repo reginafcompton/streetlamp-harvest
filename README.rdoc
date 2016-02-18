@@ -1,28 +1,13 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This blog explores the urban harvests of Chicago. Each post features a cabbage or other decorative vegetable and describes, not only the aesthetic appeal of the plant, but also its edibility. Renewing the Chicago cabbage of its utilitarian function, this blog contemplates and playfully confronts the idea of vanity gardens and what they might signify.
 
-Things you may want to cover:
+Code-y things to know:
 
-* Ruby version
+* Ruby version 2.2.1
 
-* System dependencies
+* Postgresql database supported by AWS
 
-* Configuration
+* Some of the gems include – devise (secure user login and registration), paperclip (for image upload), and bcrypt (admin security)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+See this blog out in the wild: {Streetlamp Harvest}(https://streetlampharvest.herokuapp.com/)
