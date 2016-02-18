@@ -6,6 +6,8 @@ $(document).ready(function(){
 
   openPopUp();
   closePopUp();
+  openSPopUp();
+  closeSPopUp();
 });
 
 function openPopUp() {
@@ -26,6 +28,17 @@ function closePopUp() {
   $("body").on("click", ".close", function() {
     $(".popup-new").fadeOut(600);
     $(".popup-login").fadeOut(600);
+    $(".spopup").fadeOut(600);
     $("#mask").fadeOut(600);
+  });
+}
+
+function openSPopUp() {
+  $(window).scroll(function(){
+    if($(document).scrollTop() >= $(document).height()/20) {
+      $(".spopup").show("slow");
+    } else {
+      $(".spopup").hide("slow");
+    }
   });
 }
