@@ -28,7 +28,7 @@ function closePopUp() {
   $("body").on("click", ".close", function() {
     $(".popup-new").fadeOut(600);
     $(".popup-login").fadeOut(600);
-    $(".spopup").fadeOut(600);
+    $(".spopup").remove();
     $("#mask").fadeOut(600);
   });
 }
