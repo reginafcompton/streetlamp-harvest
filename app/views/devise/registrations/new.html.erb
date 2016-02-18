@@ -1,28 +1,29 @@
-<h2>Sign up</h2>
+<h1 class="f-fun fz-lg">Sign up</h1>
+<p>Join the Streetlamp Harvet community. As a member, you can participate in the conversation about cabbages and other decorative vegetables in the Chicago area.</p>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
+  <div class="field mb-sm">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
 
-  <div class="field">
+  <div class="field mb-sm">
     <%= f.label :password %>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <em>(Must be a minimum of <%= @minimum_password_length %> characters.)</em>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
-  <div class="field">
+  <div class="field mb-sm">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+  <div class="actions mb-sm f-fun fz-std">
+    <%= f.submit "Submit" %>
   </div>
 <% end %>
 
