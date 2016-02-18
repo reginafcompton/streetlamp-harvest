@@ -10,4 +10,4 @@ Code-y things to know:
 
 * Some of the gems include – devise (secure user login and registration), paperclip (for image upload), and bcrypt (admin security)
 
-See this blog out in the wild: {Streetlamp Harvest}(https://streetlampharvest.herokuapp.com/)
+See this blog out in the wild: https://streetlampharvest.herokuapp.com/
