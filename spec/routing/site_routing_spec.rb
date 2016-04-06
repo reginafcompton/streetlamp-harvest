@@ -16,6 +16,14 @@ RSpec.describe SessionsController, :type => :routing do
 	end
 end
 
+RSpec.describe RegistrationsController, :type => :routing do 
+	describe "routing to create user page" do 
+		it "routes to registrations#new" do 
+			expect(:get => new_user_registration_path).to route_to("registrations#new")
+		end
+	end
+end
+
 RSpec.describe PostsController, :type => :routing do
 	describe "routing to posts index page" do 
 		it "routes to posts#index" do 

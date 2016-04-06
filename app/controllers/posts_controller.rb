@@ -25,9 +25,9 @@ class PostsController < ApplicationController
 
   private
 
-    #Define explicity which params to allow.
-    def post_params
-      params.require(:post).permit(:title, :paragraph_one, :paragraph_two, :image)
-    end
+  #Define explicity which params to allow.
+  def post_params
+    params.require(:post).permit(:title, :paragraph_one, :paragraph_two, :image)
+  end
 
 end
