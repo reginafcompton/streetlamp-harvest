@@ -11,6 +11,28 @@
 </head>
 <body>
 
+<nav class="navbar navbar-default navbar-fixed transparent-nav">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to "Streetlamp Harvest", root_path, class: "navbar-brand" %>
+    </div>
+    <div id="navbar-collapse-1" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden"><a href="/"></a></li>
+        <li><%= link_to "About", root_path %></li>
+        <li><%= link_to "Contact", root_path %></li>
+        <li><%= link_to "Signin", root_path %></li>
+      </ul>
+    </div>
+  </div>  
+</nav>
+
   <div class="bgc-night">
     <header class="container t-ivory f-fun">
       <nav>
