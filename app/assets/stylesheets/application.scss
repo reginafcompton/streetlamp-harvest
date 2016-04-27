@@ -12,5 +12,34 @@
  *
  */
 
+// Variables
+$white-color: #ffffff;
+$hover-color: #BCBBC2;
+$f-fun: 'Londrina Sketch', cursive;
+$f-std: 'Quicksand', sans-serif;
+$bg-dark: #313F54;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+footer {
+	background: url("grey_london.JPG");
+	background-size: 500px;
+	padding: 1.5em;
+	text-align: center;
+	font-family: $f-std;
+	color: $white-color;
+	font-size: 25px;
+}
+
+h1 {
+	font-family: $f-fun;
+}
+
+h3 {
+	font-family: $f-std;
+}
+
+p {
+	font-family: $f-std;
+}

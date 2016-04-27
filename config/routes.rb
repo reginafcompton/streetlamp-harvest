@@ -2,7 +2,6 @@ Rails.application.routes.draw do
 
   root 'landing#index'
   get 'landing/index'
-  get 'welcome/index'
   get 'about/index'
 
   resources :posts do

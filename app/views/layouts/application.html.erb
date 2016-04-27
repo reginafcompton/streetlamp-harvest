@@ -32,16 +32,16 @@
     </div>
   </div>  
 </nav>
-
+<!-- 
   <div class="bgc-night">
     <header class="container t-ivory f-fun">
       <nav>
       <ul class="fz-lg">
-        <% if user_signed_in? %>
+        <%# if user_signed_in? %>
           <li class="fl-l lis-n p-sm-t"><%= link_to image_tag("carrot.png"), destroy_user_session_path, :method => 'delete' %></li>
-        <% else %>
+        <%# else %>
           <li class="fl-l lis-n p-sm-t"><%= link_to image_tag("tomato.png"), new_user_session_path %></li>
-        <% end %>
+        <%# end %>
 
         <li class="fl-r lis-n p-xxs"><%= link_to 'home', root_path %></li>
         <li class="fl-r lis-n p-xxs"><%= link_to 'posts', posts_path %></li>
@@ -53,39 +53,25 @@
   </div>
 
   <div class="img">
-  </div>
+  </div> -->
 
-<main class="container row gutters-t gutters-d p-lg-b">
-  <div class="col span-12-t p-xxs f-std fz-std ta-j text">
+<main class="container">
 
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
   <%= yield %>
 
-  </div>
-
-<!--   <div class="col span-3-t p-xxs f-std">
-    <h3 class="fz-lg p-sm-t">Recent Highlights</h3>
-      <ul>
-        <li class="lis-n p-xxs fz-sm"><%# link_to 'University of Chicago', post_path(@trend_post) %></li>
-      </ul>
-    <h3 class="fz-lg p-sm-t">Archives</h3>
-      <ul>
-        <li class="lis-n p-xxs fz-sm">October 2015</li>
-        <li class="lis-n p-xxs fz-sm">November 2015</li>
-      </ul>
-    </div> -->
 </main>
 
 <footer class="p-xs ta-c bgc-day f-fun fz-lg">
-  <% if logged_in_admin %>
-    <%= link_to image_tag("eggplant.png"), logout_path %>
-  <% else %>
-    <div><a id="admin-login"><%= image_tag("cabbage.png", height: '80', width: '80') %></a></div>
-    <%= render 'admin/login' %>
-    <div id="mask"></div>
-  <% end %>
+  <%# if logged_in_admin %>
+    <%#= link_to image_tag("eggplant.png"), logout_path %>
+  <%# else %>
+    <!-- <div><a id="admin-login"><%= image_tag("cabbage.png", height: '80', width: '80') %></a></div> -->
+    <%#= render 'admin/login' %>
+    <!-- <div id="mask"></div> -->
+  <%# end %>
     <div class="">Copyright &copy; Regina Frances Compton 2015</div>
 </footer>
 
