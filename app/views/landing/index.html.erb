@@ -1,0 +1,39 @@
+<link href='https://fonts.googleapis.com/css?family=Poiret+One|Amatic+SC|Quicksand|Londrina+Sketch' rel='stylesheet' type='text/css'>
+<%= stylesheet_link_tag "landing", media: 'print, screen' %>
+
+<div class="background">
+
+	<nav class="navbar navbar-default navbar-fixed">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
+					<span class="sr-only">Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<%= link_to "Streetlamp Harvest", welcome_index_path, class: "navbar-brand" %>
+			</div>
+			<div id="navbar-collapse-1" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="hidden"><a href="/"></a></li>
+					<li><%= link_to "Login", new_user_session_path %></li>
+				</ul>
+			</div>
+		</div>	
+	</nav>
+
+	<div class="main-container" class="container">
+		<div class="row">
+			<header>
+				<div class="container">
+					<div class="intro">
+						<div class="welcome">Streetlamp Harvest</div>
+						<%= link_to "Enter", welcome_index_path, class: "btn btn-xl" %>
+					</div>
+				</div>
+			</header>
+		</div>
+	</div>
+
+</div>
