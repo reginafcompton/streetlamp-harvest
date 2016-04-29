@@ -18,12 +18,28 @@ $hover-color: #BCBBC2;
 $f-fun: 'Londrina Sketch', cursive;
 $f-std: 'Quicksand', sans-serif;
 $bg-dark: #313F54;
+$bg-purple: #5F445D;
+$bg-light-purple: #A9A0A9;
+$bg-blue: #3E4863;
+
+// Override Bootstrap
+$navbar-margin-bottom: 0;
+$navbar-default-bg: $white-color;
+$navbar-default-link-color: $bg-dark;
+$navbar-height: 80px;
+$navbar-default-border: 0px;
+$navbar-border-radius: 0;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.nav, .navbar-brand {
+	font-family: $f-std;
+	font-size: 2em;
+}
+
 footer {
-	background: url("grey_london.JPG");
+	background: url("grey_london.jpg");
 	background-size: 500px;
 	padding: 1.5em;
 	text-align: center;
@@ -40,6 +56,55 @@ h3 {
 	font-family: $f-std;
 }
 
-p {
+.text {
 	font-family: $f-std;
+	font-size: 1.5em;
+	padding-bottom: 1.5em;
+	p {
+		padding: 0.5em 0 0.5em 0;
+		line-height: 1.8em;
+	}
+}
+
+.social {
+	text-align: center;
+	margin: auto 0;
+	margin: 2em 0 2em 0;
+	li {
+		display: inline;
+		list-style: none;
+		margin: 2em;
+	}
+}
+
+.bg-top {
+	background-color: $bg-purple;
+	color: $white-color;
+	.row {
+		padding: 2em 0 2em 0;
+	}
+	h1 {
+		font-size: 4em;
+	}
+}
+
+.bg-transparent {
+	background: url("grey_london_clear.JPG");
+	background-size: 500px;
+
+}
+
+.bg-bottom {
+	background-color: $bg-blue;
+	color: $white-color;
+	.row {
+		padding: 1.5em 0 1.5em 0;
+	}
+}
+
+.bg-bio {
+	background-color: rgba(62,72,99, 0.15);
+	.text{
+		padding-top: 2em;
+	}
 }
