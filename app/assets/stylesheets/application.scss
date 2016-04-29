@@ -38,8 +38,14 @@ $navbar-border-radius: 0;
 	font-size: 2em;
 }
 
+.bg-transparent {
+	background: url("grey_london_clear.JPG");
+	background-size: 500px;
+
+}
+
 footer {
-	background-image: url("grey_london.jpg");
+	background-image: url("grey_london_1.JPG");
 	background-size: 500px;
 	padding: 1.5em;
 	text-align: center;
@@ -47,6 +53,7 @@ footer {
 	color: $white-color;
 	font-size: 25px;
 }
+
 
 h1 {
 	font-family: $f-fun;
@@ -88,11 +95,6 @@ h3 {
 	}
 }
 
-.bg-transparent {
-	background: url("grey_london_clear.JPG");
-	background-size: 500px;
-
-}
 
 .bg-bottom {
 	background-color: $bg-blue;
