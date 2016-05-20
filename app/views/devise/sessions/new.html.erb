@@ -1,26 +1,61 @@
-<h1 class="f-fun fz-lg">Log in</h1>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field mb-sm">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+<main>
 
-  <div class="field mb-sm">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div class="field mb-sm">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+  <section class="bg-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="f-fun fz-lg">Log in</h1>
+          <h3>Come in. Join the conversation.</h3>
+        </div>
+      </div>
     </div>
-  <% end -%>
+  </section>
 
-  <div class="actions mb-sm f-fun fz-std">
-    <%= f.submit "Submit" %>
-  </div>
-<% end %>
+  <section class="bg-transparent">
+    <div class="container">
+      <div class="row">
+        <div class="login col-lg-12">
 
-<%= render "devise/shared/links" %>
+          <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+            <div class="field">
+              <%= f.label :email %><br />
+              <%= f.email_field :email, autofocus: true %>
+            </div>
+
+            <div class="field">
+              <%= f.label :password %><br />
+              <%= f.password_field :password, autocomplete: "off" %>
+            </div>
+
+            <% if devise_mapping.rememberable? %>
+              <div class="field">
+                <%= f.check_box :remember_me %>
+                <%= f.label :remember_me %>
+              </div>
+            <% end %>
+
+            <div class="actions">
+              <%= f.submit "Submit" %>
+            </div>
+
+          <% end %>
+
+          <div class="bg-box info">
+              <div class="row">
+                <div>
+                  <%= render "devise/shared/links" %>
+                </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+</main>

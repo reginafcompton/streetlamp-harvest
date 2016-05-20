@@ -110,3 +110,29 @@ h3 {
 		padding-top: 2em;
 	}
 }
+
+.login {
+	padding-top: 1em;
+	text-align: center;
+	font-family: $f-std;
+	font-size: 1.5em;
+		.info {
+		width: 25em;
+		margin: 0 auto;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		padding: 1em;
+		border-radius: 25px;
+		color: white;
+		 a { color: white; }
+	}
+}
+
+.bg-box {
+	background-color: rgba(62, 72, 99, 0.8);
+}
+
+.actions {
+	font-family: $f-fun;
+	font-size: 1.5em;
+}
